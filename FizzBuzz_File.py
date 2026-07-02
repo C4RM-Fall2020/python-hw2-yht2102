@@ -1,5 +1,16 @@
 import numpy as np
 
 def FizzBuzz(start, finish):
-    v = ['buzz', 41, 'fizz', 43, 44, 'fizzbuzz']
+
+    num = np.arange(start, finish)
+
+    v = np.array(num, dtype=object)
+
+    fizz = (num % 3 == 0)
+    buzz = (num % 5 == 0)
+
+    v[fizz] = "fizz"
+    v[buzz] = "buzz"
+    v[fizz & buzz] = "fizzbuzz"
+
     return(v)
