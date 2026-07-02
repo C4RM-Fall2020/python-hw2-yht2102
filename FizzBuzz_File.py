@@ -2,7 +2,7 @@ import numpy as np
 
 def FizzBuzz(start, finish):
 
-    num = np.arange(start, finish)
+    num = np.arange(start, finish + 1)
 
     v = np.array(num, dtype=object)
 
