@@ -14,3 +14,5 @@ def getBondPrice(y, face, couponRate, m, ppy=1):
     x = np.sum(cf * pv)
 
     return(x)
+
+print(getBondPrice(0.03, 2000000, 0.04, 10))
